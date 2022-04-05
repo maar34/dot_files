@@ -1,13 +1,13 @@
 #!/bin/sh
 
 #
-xcode-select --install
+#xcode-select --install
 
 # Install Homebrew.
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install Browsers.
-brew cask install FireFox
+brew install --cask firefox
 brew cask install google-chrome
 
 # Install Dev apps.
@@ -17,23 +17,23 @@ brew cask install visual-studio-code
 
 # Install Misc.
 brew cask install keka
-brew cask install skim
+#brew cask install skim
 brew cask install rectangle
 
 # Install Tools.
 sudo chown -R $(whoami) /usr/local/lib/pkgconfig
-brew install python@3
+# brew install python@3
 # brew install python@2
 brew install ruby
-brew install netcat
+# brew install netcat
 # brew install docker
 brew install npm
-brew install htop
+#brew install htop
 
-pip2 install virtualenv
-pip3 install ipython
-brew install imagemagick
-brew install tree
+#pip2 install virtualenv
+#pip3 install ipython
+#brew install imagemagick
+#brew install tree
 
 
 # Because mac verion of xargs and sed is god awful.
@@ -52,26 +52,26 @@ defaults write com.apple.coreservices.uiagent CSUILastOSVersionWhereSafariRecomm
 
 
 # Productivity apps
-brew install --cask iterm2
-brew install --cask evernote
-brew install --cask shades
-brew install --cask google-drive-file-stream
-brew install --cask vnc-viewer
+brew install --cask google-drive
+brew install --cask spotify
+# brew install --cask vnc-viewer
 brew install --cask obs
 brew install --cask zotero
 
 brew install --cask dropbox
-brew install --cask macpass
+# brew install --cask macpass
 brew install --cask appcleaner
 brew install --cask bibdesk
+brew install --cask jdownloader
 
 brew install clickup
 
 # Communication apps
-brew install --cask skype
-brew install --cask slack
+# brew install --cask skype
+# brew install --cask slack
+brew install --cask discord
 brew install --cask zoomus
-brew install --cask rambox
+# brew install --cask rambox
 # brew install --cask signal
 
 # Media apps
@@ -81,13 +81,15 @@ brew install --cask handbrake
 brew install sox
 brew install --cask vlc
 brew install --cask cycling74-max
-brew install --cask ableton-live-suite
+# brew install --cask ableton-live-suite
 brew install --cask midi-monitor
 brew install --cask vcv-rack
 brew install --cask surge-synthesizer
-brew install mkchromecast
-brew install --cask reaper
-brew install supercollider
+# brew install mkchromecast
+# brew install --cask reaper
+# brew install supercollider
+brew install --cask leap-motion
+brew install --cask touchdesigner
 
 # Connectivity
 brew install --cask lulu # block non-wanted connections
